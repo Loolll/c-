@@ -5,7 +5,7 @@
 
 using namespace std;
 
-bool exists(vector<auto> arr; auto object){
+bool exists(vector<auto> arr, auto object){
     return find(arr.begin(), arr.end(), object)!=arr.end();
 }
 
@@ -19,6 +19,12 @@ int main(){
     sort(words.begin(), words.end());
 
     for(string word:words){
-        if(blocked.
+        if(exists(blocked, word)){
+            cout<<"NOOO ";
+        }
+        else{
+            cout<<word<<" ";
+        }
     }
+    cout<<endl;
 }
